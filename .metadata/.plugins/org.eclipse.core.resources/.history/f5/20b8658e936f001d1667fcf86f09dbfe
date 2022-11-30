@@ -1,0 +1,14 @@
+package cafe.BO;
+
+public class myinfo_service {
+	
+	public void info() {
+		
+	}
+	public void order_list() {
+		
+	}
+	public void my_wallet() {
+		
+	}
+}

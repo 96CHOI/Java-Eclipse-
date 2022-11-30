@@ -1,0 +1,32 @@
+package DAO;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import VO.venture;
+
+public class venture_DAO extends init_DAO {
+
+	public List<venture> Select_all() {
+		List<venture> list = new ArrayList<>();
+
+		String sql = "select * from venture";
+
+		try {
+			//sql에 보낸다
+			pt = conn.prepareStatement(sql);
+			//보낸것을 받는다.
+			rs = pt.executeQuery();
+			while (rs.next()) {
+				venture data = new venture(rs.getInt(0), rs.getString(1), rs.getString(2),
+						rs.getString(3), rs.getString(4), rs.getString(5));
+				list.add(data);
+			}
+			return list;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+}

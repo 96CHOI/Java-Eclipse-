@@ -1,0 +1,20 @@
+package cafe.BO;
+
+public class myinfo_service {
+	
+	// 내 정보
+	public void info() {
+		
+		
+	}
+	// 내 주문내역
+	public void order_list() {
+		
+		
+	}
+	// 내 지갑
+	public void my_wallet() {
+		
+		
+	}
+}

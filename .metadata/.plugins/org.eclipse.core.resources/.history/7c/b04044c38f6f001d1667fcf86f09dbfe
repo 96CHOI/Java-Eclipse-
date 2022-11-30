@@ -1,0 +1,17 @@
+package cafe.control;
+
+public class myinfo implements menu_able {
+	
+	//myinfo 클래스에 할일
+	// 로그인 한 회원의 정보 확인
+	// 주문내역 확인
+	// 지갑 확인
+	private myinfo_service mysvc = new myinfo_service();
+	
+	@Override
+	public boolean menu_active() {
+		
+		
+		return false;
+	}
+}

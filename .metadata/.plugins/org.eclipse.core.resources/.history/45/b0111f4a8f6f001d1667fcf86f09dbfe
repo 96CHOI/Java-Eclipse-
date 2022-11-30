@@ -1,0 +1,5 @@
+package cafe.control;
+
+public class myinfo implements menu_able {
+	
+}

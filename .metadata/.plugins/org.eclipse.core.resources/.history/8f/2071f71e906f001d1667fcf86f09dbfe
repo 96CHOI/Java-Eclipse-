@@ -1,0 +1,23 @@
+package cafe.control;
+
+import cafe.BO.myinfo_service;
+import cafe.main.cafe_main;
+
+public class myinfo implements menu_able {
+	
+	//myinfo 클래스에 할일
+	// 로그인 한 회원의 정보 확인
+	// 주문내역 확인
+	// 지갑 확인
+	private myinfo_service mysvc = new myinfo_service();
+	
+	@Override
+	public boolean menu_active() {
+		if (cafe_main.user == null) {
+			System.out.println("로그인을 먼저 해주세요%n ===================%n%n");
+			return true;
+		}
+		
+		return false;
+	}
+}

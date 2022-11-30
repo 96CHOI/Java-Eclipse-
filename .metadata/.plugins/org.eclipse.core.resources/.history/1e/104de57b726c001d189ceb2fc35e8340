@@ -1,0 +1,18 @@
+package cafe.DAO;
+
+import java.sql.SQLException;
+
+public class food_DAO extends base_DAO {
+	
+	public void food_list() {
+		
+		String sql = "select * from food";
+		
+		try {
+			pt = conn.prepareStatement(sql);
+			rs = pt.executeQuery();
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}

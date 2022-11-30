@@ -1,0 +1,5 @@
+package cafe.BO;
+
+public class food_service {
+	private food_DAO fdao = new food_DAO();
+}

@@ -1,0 +1,34 @@
+package cafe.BO;
+
+import java.text.DecimalFormat;
+
+import cafe.DAO.food_DAO;
+import cafe.DAO.member_DAO;
+import cafe.VO.member;
+
+public class myinfo_service {
+	private member_DAO mdao = new member_DAO();
+	private food_DAO fdao = new food_DAO();
+	// 내 정보
+	public void info() {
+		DecimalFormat fmt = new DecimalFormat("###,###");
+		member my = mdao.info_select();
+		System.out.println("아이디 : " + my.getId());
+		System.out.println("이름 : " + my.getName());
+		System.out.println("연락처 : "+ my.getTel());
+		System.out.println("이메일 : " + my.getEmail());
+		System.out.println("알러지 : " + my.getAllergy());
+		System.out.println("잔액 : " + my.getMoney());
+		
+	}
+	// 내 주문내역
+	public void order_list() {
+		
+		
+	}
+	// 내 지갑
+	public void my_wallet() {
+		
+		
+	}
+}

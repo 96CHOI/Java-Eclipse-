@@ -1,0 +1,8 @@
+package cafe.DAO;
+
+public class food_DAO extends base_DAO {
+	
+	public void food_list() {
+		
+	}
+}

@@ -1,0 +1,35 @@
+package DAO;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import cafe.VO.food;
+
+public class venture_DAO extends init_DAO{
+
+	public List<venture> Select_all(){
+		List<venture> list = new ArrayList<>();
+
+		String sql = "select * from food";
+
+		try {
+			pt = conn.prepareStatement(sql);
+			rs = pt.executeQuery();
+			while (rs.next()) {// 여러 레코드를 조회 했다면 반복문 처리
+				food data = new food(rs.getInt("food_seq"), rs.getString("food_name"), rs.getInt("cost"),
+						rs.getInt("cook_time"), rs.getInt("cal"), rs.getString("allergy"), rs.getInt("order_quantity"));
+
+				food_map.put(data.getFood_seq(), data);
+			}
+			return food_map;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	}
+}

@@ -1,0 +1,9 @@
+package cafe.DAO;
+
+public class food_DAO {
+	
+	
+	public void food_list() {
+		
+	}
+}
