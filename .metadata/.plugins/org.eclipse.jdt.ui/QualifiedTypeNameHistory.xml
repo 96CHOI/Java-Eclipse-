@@ -15,8 +15,8 @@
     <fullyQualifiedTypeName name="cafe.control.myinfo"/>
     <fullyQualifiedTypeName name="cafe.VO.member"/>
     <fullyQualifiedTypeName name="cafe.main.cafe_main"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="VO.venture"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
 </qualifiedTypeNameHistroy>
