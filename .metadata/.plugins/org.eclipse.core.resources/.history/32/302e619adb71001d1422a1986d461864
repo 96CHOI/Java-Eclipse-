@@ -1,0 +1,11 @@
+package generic;
+
+public class seafood {
+	String item;
+	public void store(Object item) {
+		this.item = item;
+	}
+	public String 판매() {
+		return item;
+	}
+}

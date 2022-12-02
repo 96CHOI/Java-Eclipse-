@@ -1,0 +1,8 @@
+package generic;
+
+public class 구매 {
+	
+	public void buy(오징어 item) {
+		System.out.println("해산물 구매함");
+	}
+}

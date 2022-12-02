@@ -1,0 +1,12 @@
+package generic;
+
+//<T> : 제네릭을 사용하겠다라는 뜻
+public class seafood<T> {
+	T item;
+	public void store(T item) {
+		this.item = item;
+	}
+	public T 판매() {
+		return item;
+	}
+}
